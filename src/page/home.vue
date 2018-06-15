@@ -10,13 +10,13 @@
             <!-- 轮播（Carousel）项目 -->
             <div class="carousel-inner">
                 <div class="item active">
-                    <img src="http://www.iremax.hk/uploadfile/2018/0502/20180502043002742.jpg" alt="First slide">
+                    <img src="../assets/image/20180502043002742.jpg" alt="First slide">
                 </div>
                 <div class="item">
-                    <img src="http://www.iremax.hk/uploadfile/2018/0502/20180502043457968.jpg" alt="Second slide">
+                    <img src="../assets/image/20180502043457968.jpg" alt="Second slide">
                 </div>
                 <div class="item">
-                    <img src="http://www.iremax.hk/uploadfile/2018/0126/20180126094502234.jpg" alt="Third slide">
+                    <img src="../assets/image/20180126094502234.jpg" alt="Third slide">
                 </div>
             </div>
             <!-- 轮播（Carousel）导航 -->
@@ -83,58 +83,58 @@
 <script>
 import footBgcolor from "../components/footer";
 export default {
-    name: "home",
-    data() {
-        return {};
-    },
-    components: {
-        footBgcolor
-    },
-    computed: {},
-    mounted() {}
+  name: "home",
+  data() {
+    return {};
+  },
+  components: {
+    footBgcolor
+  },
+  computed: {},
+  mounted() {}
 };
 </script>
 
 <style scoped>
 .carousel-control {
-    width: 5%;
+  width: 5%;
 }
 .carousel-control .glyphicon-chevron-left,
 .carousel-control .icon-prev {
-    margin-left: -20px;
+  margin-left: -20px;
 }
 .carousel-indicators li {
-    width: 20px;
-    height: 3px;
-    background-color: #e1e1e1;
+  width: 20px;
+  height: 3px;
+  background-color: #e1e1e1;
 }
 .carousel-indicators .active {
-    background-color: yellow;
-    margin: 1px;
-    border: 1px solid yellow;
+  background-color: yellow;
+  margin: 1px;
+  border: 1px solid yellow;
 }
 .CarouselAmend {
-    width: 80%;
-    margin: 3% 10%;
+  width: 80%;
+  margin: 3% 10%;
 }
 .itemActive {
-    float: left;
-    width: 25%;
-    margin: 0% 2.5%;
-    height: auto;
+  float: left;
+  width: 25%;
+  margin: 0% 2.5%;
+  height: auto;
 }
 .itemActiveF {
-    margin-left: 5%;
+  margin-left: 5%;
 }
 .itemActive img {
-    display: block;
-    padding: 5%;
-    max-width: 100%;
-    height: auto;
+  display: block;
+  padding: 5%;
+  max-width: 100%;
+  height: auto;
 }
 
 .itemActive img:hover {
-    padding: 0;
-    box-shadow: 5px 5px 5px #888888;
+  padding: 0;
+  box-shadow: 5px 5px 5px #888888;
 }
 </style>
