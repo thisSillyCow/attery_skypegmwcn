@@ -1,27 +1,50 @@
 <template>
     <div class="pageHome">
         <theme class="theme"></theme>
-        <router-view class="contentView"></router-view>
+        <router-view class="contentView" ></router-view>
+        <hint-module :introduceDate="HimtDate" v-if="HimtDateType" ></hint-module>
     </div>
 </template>
 
 <script>
-import theme from "../components/theme.vue";
+import theme from "../components/theme";
+import hintModule from "../components/hintModule";
 export default {
-    name: "index",
-    components: {
-        theme
-    }
+  name: "index",
+  components: {
+    theme,
+    hintModule
+  },
+  data() {
+    return {
+      HimtDateType: true,
+      HimtDate: {
+        type: "",
+        loadingDate: ""
+      }
+    };
+  },
+  mounted() {
+    const that = this;
+    that.HimtDate = { type: "loading", loadingDate: "加载中" };
+    const IntervalTime = setInterval(() => {
+      const readyState = document.readyState;
+      if (readyState == "complete") {
+        clearInterval(IntervalTime);
+        that.HimtDateType = false;
+      }
+    });
+  }
 };
 </script>
 
 <style scoped>
 .pageHome {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .contentView {
-    margin-top: 50px;
+  margin-top: 50px;
 }
 </style>
