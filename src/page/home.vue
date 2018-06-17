@@ -4,24 +4,22 @@
         <content-roll></content-roll>
         <content-roll></content-roll>
         <content-roll></content-roll>
-        <foot-bgcolor></foot-bgcolor>
     </div>
 </template>
 
 <script>
 import footBgcolor from "../components/footer";
-import Carousel from "../components/carousel";
-import ContentRoll from "../components/contentRoll";
+import Carousel from "./carousel";
+import ContentRoll from "./contentRoll";
 export default {
-  name: "home",
-  data() {
-    return {};
-  },
-  components: {
-    footBgcolor,
-    Carousel,
-    ContentRoll
-  }
+    name: "home",
+    data() {
+        return {};
+    },
+    components: {
+        Carousel,
+        ContentRoll
+    }
 };
 </script>
 

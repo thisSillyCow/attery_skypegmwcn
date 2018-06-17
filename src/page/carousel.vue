@@ -1,12 +1,12 @@
 <template>
-    <div  id="carousel">
+    <div id="carousel">
         <div id="myCarousel" class="carousel slide">
             <!-- 轮播（Carousel）指标 -->
             <ol class="carousel-indicators">
                 <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
                 <li data-target="#myCarousel" data-slide-to="1"></li>
                 <li data-target="#myCarousel" data-slide-to="2"></li>
-            </ol>   
+            </ol>
             <!-- 轮播（Carousel）项目 -->
             <div class="carousel-inner">
                 <div class="item active">
@@ -29,40 +29,40 @@
                 <span class="sr-only">Next</span>
             </a>
         </div>
-         <div id="myCarousel2" class="carousel slide CarouselAmend">
+        <div id="myCarousel2" class="carousel slide CarouselAmend">
             <!-- 轮播（Carousel）项目 -->
             <div class="carousel-inner">
                 <div class="item active">
                     <div class="itemActive itemActiveF">
-                     <img src="../assets/image/0.jpg" alt="First slide">
+                        <img src="../assets/image/0.jpg" alt="First slide">
                     </div>
                     <div class="itemActive">
-                     <img src="../assets/image/1.jpg" alt="First slide">
+                        <img src="../assets/image/1.jpg" alt="First slide">
                     </div>
                     <div class="itemActive">
-                     <img src="../assets/image/2.jpg" alt="First slide">
+                        <img src="../assets/image/2.jpg" alt="First slide">
                     </div>
                 </div>
                 <div class="item">
                     <div class="itemActive itemActiveF">
-                     <img src="../assets/image/3.jpg" alt="First slide">
+                        <img src="../assets/image/3.jpg" alt="First slide">
                     </div>
                     <div class="itemActive">
-                     <img src="../assets/image/4.jpg" alt="First slide">
+                        <img src="../assets/image/4.jpg" alt="First slide">
                     </div>
                     <div class="itemActive">
-                     <img src="../assets/image/5.jpg" alt="First slide">
+                        <img src="../assets/image/5.jpg" alt="First slide">
                     </div>
                 </div>
                 <div class="item">
                     <div class="itemActive itemActiveF">
-                     <img src="../assets/image/6.jpg" alt="First slide">
+                        <img src="../assets/image/6.jpg" alt="First slide">
                     </div>
                     <div class="itemActive">
-                     <img src="../assets/image/7.jpg" alt="First slide">
+                        <img src="../assets/image/7.jpg" alt="First slide">
                     </div>
                     <div class="itemActive">
-                     <img src="../assets/image/8.jpg" alt="First slide">
+                        <img src="../assets/image/8.jpg" alt="First slide">
                     </div>
                 </div>
             </div>
@@ -83,53 +83,48 @@
 export default {
     name: "carousel",
     data() {
-        return {
-        };
-    },
+        return {};
+    }
 };
 </script>
 
 <style scoped>
 .carousel-control {
-  width: 5%;
+    width: 5%;
 }
-.carousel-control .glyphicon-chevron-left,
-.carousel-control .icon-prev {
-  margin-left: -20px;
-}
+
 .carousel-indicators li {
-  width: 20px;
-  height: 3px;
-  background-color: #e1e1e1;
+    width: 20px;
+    height: 3px;
+    background-color: #e1e1e1;
 }
 .carousel-indicators .active {
-  background-color: yellow;
-  margin: 1px;
-  border: 1px solid yellow;
+    background-color: yellow;
+    margin: 1px;
+    border: 1px solid yellow;
 }
 .CarouselAmend {
-  width: 80%;
-  margin: 3% 10%;
+    width: 80%;
+    margin: 3% 10%;
 }
 .itemActive {
-  float: left;
-  width: 25%;
-  margin: 0% 2.5%;
-  height: auto;
+    float: left;
+    width: 25%;
+    margin: 0% 2.5%;
+    height: auto;
 }
 .itemActiveF {
-  margin-left: 5%;
+    margin-left: 5%;
 }
 .itemActive img {
-  display: block;
-  padding: 5%;
-  max-width: 100%;
-  height: auto;
+    display: block;
+    padding: 5%;
+    max-width: 100%;
+    height: auto;
 }
 
 .itemActive img:hover {
-  padding: 0;
-  box-shadow: 5px 5px 5px #888888;
+    padding: 0;
+    box-shadow: 5px 5px 5px #888888;
 }
-
 </style>
